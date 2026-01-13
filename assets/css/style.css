@@ -90,3 +90,151 @@ h2{
     cursor: pointer;
     font-family: 'Antont', sans-serif;
 }
+
+.navbar {
+  font-family: 'Antont, sans-serif;';
+  font-size: x-large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  position: relative;
+  border: 4px solid white;
+}       
+
+.title-conteiner h1 {
+  font-family: 'Anton', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
+.agregar {
+  font-family: 'Anton', sans-serif;
+  color: white;
+  max-width: 600px; 
+  margin: 0 auto 2rem auto; 
+  padding: 1rem;
+  background-color: rgba(22, 55, 90, 0.7);
+  border-radius: 8px;
+}
+
+.agregar h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+.agregar form .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 15px;
+}
+
+
+.agregar form label {
+  min-width: 100px; 
+  font-size: 1rem;
+}
+
+
+.agregar form input {
+    
+  flex: 1; 
+  padding: 0.5em;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.agregar form button {
+  margin-top: 1rem;
+  padding: 0.7em;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #16375A;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.agregar form button:hover {
+  background-color: #0f2840;
+}
+
+  .agregar form input {
+    width: 100%;
+  }
+
+
+
+  .agregar {
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.agregar label {
+  display: block;
+  margin-top: 10px;
+}
+
+.agregar input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 3px;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+}
+
+.agregar button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #16375A;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+}
+
+button.editar, button.eliminar {
+  padding: 5px 8px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+button.editar {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+button.eliminar {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
