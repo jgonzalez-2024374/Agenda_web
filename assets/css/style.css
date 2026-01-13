@@ -1,0 +1,92 @@
+body {
+    background-image: url('../img/Fondo.jpg');
+    min-height: 100svh;
+    background-attachment: fixed;
+}
+
+@media (max-width: 790px) {
+  body {
+    background-position: 50% center;
+    background-attachment: fixed;
+  }
+}
+
+.title{
+    margin-top: 15svh;
+}
+.title h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    font-family: 'Robot', sans-serif;
+    font-weight: 100;
+    
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-family: 'Robot', sans-serif;
+    font-weight: 100;
+    margin-top: 2svh;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5svh;
+}
+
+.correo{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-family: 'Antont', sans-serif;
+    margin-top: 2svh;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid white;
+    outline: none;  
+}
+
+.contraseña{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-family: 'Antont', sans-serif;
+    margin-top: 2svh;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+.btn-ingresar{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5svh;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #16375A;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Antont', sans-serif;
+}
+
+.btn-registrarse{
+    display: block;
+    margin: 0 auto;
+    margin-top: 2svh;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #16375A;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Antont', sans-serif;
+}
