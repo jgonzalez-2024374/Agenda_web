@@ -1,240 +1,180 @@
-body {
+body{
     background-image: url('../img/Fondo.jpg');
     min-height: 100svh;
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-@media (max-width: 790px) {
-  body {
-    background-position: 50% center;
-    background-attachment: fixed;
-  }
+.navbar{
+    background-color: transparent;
+    border: white 3px solid;
+    border-radius: 10px;
 }
 
-.title{
-    margin-top: 15svh;
-}
-.title h1 {
-    font-size: 3rem;
-    text-align: center;
-    color: white;
+.nav-link{
+    color: white !important;
     font-family: 'Robot', sans-serif;
     font-weight: 100;
-    
+    font-size: 1.2rem;
 }
 
-h2{
-    font-size: 2rem;
+.navbar-toggler{
+    border-color: white;
+}
+
+.favorite-title{
     text-align: center;
+    margin-top: 4.2rem;
     color: white;
     font-family: 'Robot', sans-serif;
-    font-weight: 100;
+}
+
+.add-button{
+    display: block;
+    margin: 0 auto;
     margin-top: 2svh;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #16375A;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Antont', sans-serif;
 }
 
-.input-container{
+
+#formularioAgregar {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5svh;
-}
-
-.correo{
-    font-size: 1.5rem;
-    text-align: center;
-    color: white;
-    font-family: 'Antont', sans-serif;
-    margin-top: 2svh;
-    background-color: transparent;
-    border:none;
-    border-bottom: 2px solid white;
-    outline: none;  
-}
-
-.contraseña{
-    font-size: 1.5rem;
-    text-align: center;
-    color: white;
-    font-family: 'Antont', sans-serif;
-    margin-top: 2svh;
-    background-color: transparent;
-    border:none;
-    border-bottom: 2px solid white;
-    outline: none;
-}
-
-.btn-ingresar{
-    display: block;
-    margin: 0 auto;
-    margin-top: 5svh;
-    padding: 10px 20px;
-    font-size: 1.5rem;
-    color: white;
-    background-color: #16375A;
-    border: 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Antont', sans-serif;
-}
-
-.btn-registrarse{
-    display: block;
-    margin: 0 auto;
-    margin-top: 2svh;
-    padding: 10px 20px;
-    font-size: 1.5rem;
-    color: white;
-    background-color: #16375A;
-    border: 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Antont', sans-serif;
-}
-
-.navbar {
-  font-family: 'Antont, sans-serif;';
-  font-size: x-large;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  height: 80px;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  position: relative;
-  border: 4px solid white;
-}       
-
-.title-conteiner h1 {
-  font-family: 'Anton', sans-serif;
-  color: white;
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 2.5rem;
-}
-
-.agregar {
-  font-family: 'Anton', sans-serif;
-  color: white;
-  max-width: 600px; 
-  margin: 0 auto 2rem auto; 
-  padding: 1rem;
-  background-color: rgba(22, 55, 90, 0.7);
-  border-radius: 8px;
-}
-
-.agregar h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+    justify-content: center;
+    margin: 40px 0;       
+    padding: 0 15px;
 }
 
 
-.agregar form .form-group {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  gap: 15px;
-}
-
-
-.agregar form label {
-  min-width: 100px; 
-  font-size: 1rem;
-}
-
-
-.agregar form input {
-    
-  flex: 1; 
-  padding: 0.5em;
-  font-size: 1rem;
-  border: none;
-  border-bottom: 2px solid white;
-  background-color: transparent;
-  color: white;
-  outline: none;
-  box-sizing: border-box;
-}
-
-.agregar form button {
-  margin-top: 1rem;
-  padding: 0.7em;
-  font-size: 1rem;
-  width: 100%;
-  border: none;
-  border-radius: 4px;
-  background-color: #16375A;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.agregar form button:hover {
-  background-color: #0f2840;
-}
-
-  .agregar form input {
+.form-container {
     width: 100%;
-  }
-
-
-
-  .agregar {
-  max-width: 400px;
-  margin-bottom: 30px;
+    max-width: 420px;
+    background: rgba(10, 30, 60, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.agregar label {
-  display: block;
-  margin-top: 10px;
+
+.form-container > button {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: white 2px solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.agregar input {
-  width: 100%;
-  padding: 5px;
-  margin-top: 3px;
-  border: none;
-  border-bottom: 2px solid #333;
-  outline: none;
+.form-container > button:hover {
+    transform: translateY(-2px);
 }
 
-.agregar button {
-  margin-top: 15px;
-  padding: 10px;
-  width: 100%;
-  cursor: pointer;
-  background-color: #16375A;
+
+#form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #dbe7ff;
+    font-weight: 500;
+}
+
+
+#form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    border-bottom: white 2px solid;
+    font-size: 14px;
+}
+
+
+#form button {
+    width: 100%;
+    padding: 11px;
+    background-color: transparent;
+    border: white 2px solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.form-control{
   color: white;
-  border: none;
-  font-weight: bold;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  color: white;
+#tablaContactos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
+    
+}
+#tablaContactos th, #tablaContactos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
 }
 
-th, td {
-  border: 1px solid #ccc;
+#tablaContactos button {
+    border: none;
+    padding: 6px 10px;
+    margin: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
 }
 
-button.editar, button.eliminar {
-  padding: 5px 8px;
-  cursor: pointer;
-  margin-right: 5px;
-  font-weight: bold;
+button[onclick^="editar"] {
+    background-color: #3b82f6;
+    color: white;
 }
 
-button.editar {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
+button[onclick^="eliminar"] {
+    background-color: #ef4444;
+    color: white;
 }
 
-button.eliminar {
-  background-color: #f44336;
-  color: white;
-  border: none;
+button[onclick^="toggleFavorito"] {
+    background-color: transparent;
+    color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

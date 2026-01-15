@@ -1,0 +1,74 @@
+body{
+    background-image: url('../img/Fondo.jpg');
+    min-height: 100svh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar{
+    background-color: transparent;
+    border: white 3px solid;
+    border-radius: 10px;
+}
+
+.nav-link{
+    color: white !important;
+    font-family: 'Robot', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.navbar-toggler{
+    border-color: white;
+}
+
+.favorite-title{
+    text-align: center;
+    margin-top: 4.2rem;
+    color: white;
+    font-family: 'Robot', sans-serif;
+}
+
+#tablaContactos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
+    
+}
+#tablaContactos th, #tablaContactos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+
+#tablaContactos button {
+    border: none;
+    padding: 6px 10px;
+    margin: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+button[onclick^="editar"] {
+    background-color: #3b82f6;
+    color: white;
+}
+
+button[onclick^="eliminar"] {
+    background-color: #ef4444;
+    color: white;
+}
+
+button[onclick^="toggleFavorito"] {
+    background-color: transparent;
+    color: black;
+}
+
+
